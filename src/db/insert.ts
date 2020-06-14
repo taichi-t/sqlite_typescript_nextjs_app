@@ -1,5 +1,7 @@
-const sqlite = require('sqlite3').verbose();
-const db = new sqlite.Database('example.sqlite'); // SQLite の DB ファイル名
+export {};
+
+let sqlite = require('sqlite3').verbose();
+let db = new sqlite.Database('example.sqlite'); // SQLite の DB ファイル名
 
 // SQL を同期的に実行する
 db.serialize(() => {

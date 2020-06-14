@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node db/insert.js && node db/select.js && next dev",
+    "dev": "node src/db/insert.ts && node src/db/select.ts && next dev",
     "build": "next build",
     "start": "next start",
     "db": "json-server --watch ./db.json -p 4001 "
